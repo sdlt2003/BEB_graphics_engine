@@ -6,6 +6,8 @@ This is the source code of `mg`, a toy graphical engine for the
 Virtuales"* class of the Faculty of Informatics in San
 Sebastian/Donostia.
 
+
+
 ## LICENSE (DO NOT MAKE PUBLIC) ##
 
 The `mg` graphic engine is for educational purposes **and can not be
