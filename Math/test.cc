@@ -880,6 +880,10 @@ void mainMenu() {
 
 
 int main() {
+
+	// el mainMenu borra todo lo que pasa antes en main(), así que si quieres
+	// probar cosas poner un return antes del mainMenu()
+
 	mainMenu();
 	return 0;
 }

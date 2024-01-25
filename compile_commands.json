@@ -1,0 +1,432 @@
+[
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser.dir/Browser/browser.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Browser/browser.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Browser/browser.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser.dir/Math/vector3.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Math/vector3.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Math/vector3.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser.dir/Math/trfm3D.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Math/trfm3D.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Math/trfm3D.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser.dir/Math/plane.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Math/plane.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Math/plane.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser.dir/Math/line.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Math/line.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Math/line.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser.dir/Math/segment.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Math/segment.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Math/segment.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser.dir/Math/bbox.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Math/bbox.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Math/bbox.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser.dir/Math/bsphere.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Math/bsphere.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Math/bsphere.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser.dir/Math/intersect.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Math/intersect.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Math/intersect.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser.dir/Math/bboxGL.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Math/bboxGL.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Math/bboxGL.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser.dir/Math/trfmStack.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Math/trfmStack.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Math/trfmStack.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser.dir/Geometry/triangleMesh.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Geometry/triangleMesh.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Geometry/triangleMesh.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser.dir/Geometry/gObject.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Geometry/gObject.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Geometry/gObject.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser.dir/Geometry/gObjectManager.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Geometry/gObjectManager.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Geometry/gObjectManager.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser.dir/Geometry/triangleMeshGL.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Geometry/triangleMeshGL.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Geometry/triangleMeshGL.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser.dir/Shading/light.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Shading/light.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Shading/light.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser.dir/Shading/material.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Shading/material.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Shading/material.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser.dir/Shading/texture.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Shading/texture.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Shading/texture.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser.dir/Shading/texturert.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Shading/texturert.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Shading/texturert.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser.dir/Shading/image.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Shading/image.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Shading/image.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser.dir/Shading/textureManager.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Shading/textureManager.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Shading/textureManager.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser.dir/Shading/materialManager.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Shading/materialManager.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Shading/materialManager.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser.dir/Shading/lightManager.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Shading/lightManager.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Shading/lightManager.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser.dir/Shading/imageManager.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Shading/imageManager.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Shading/imageManager.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser.dir/Shaders/shaderUtils.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Shaders/shaderUtils.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Shaders/shaderUtils.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser.dir/Shaders/shaderManager.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Shaders/shaderManager.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Shaders/shaderManager.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser.dir/Shaders/shader.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Shaders/shader.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Shaders/shader.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser.dir/Shaders/uniform.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Shaders/uniform.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Shaders/uniform.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser.dir/Camera/camera.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Camera/camera.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Camera/camera.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser.dir/Camera/avatar.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Camera/avatar.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Camera/avatar.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser.dir/Camera/cameraManager.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Camera/cameraManager.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Camera/cameraManager.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser.dir/Camera/avatarManager.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Camera/avatarManager.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Camera/avatarManager.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser.dir/Scene/node.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Scene/node.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Scene/node.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser.dir/Scene/nodeManager.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Scene/nodeManager.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Scene/nodeManager.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser.dir/Scene/renderState.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Scene/renderState.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Scene/renderState.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser.dir/Scene/scene.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Scene/scene.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Scene/scene.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser.dir/Scene/skybox.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Scene/skybox.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Scene/skybox.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser.dir/Misc/constants.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Misc/constants.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Misc/constants.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser.dir/Misc/tools.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Misc/tools.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Misc/tools.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser.dir/Misc/jsoncpp.cpp.o -c /home/sergio/Documents/BEB/motore_grafikoa/Misc/jsoncpp.cpp",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Misc/jsoncpp.cpp"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser.dir/Misc/parse_scene.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Misc/parse_scene.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Misc/parse_scene.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/cc  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser.dir/Misc/glm.c.o -c /home/sergio/Documents/BEB/motore_grafikoa/Misc/glm.c",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Misc/glm.c"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser.dir/Browser/scenes.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Browser/scenes.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Browser/scenes.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser_gobj.dir/Browser/browser_gobj.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Browser/browser_gobj.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Browser/browser_gobj.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser_gobj.dir/Math/vector3.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Math/vector3.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Math/vector3.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser_gobj.dir/Math/trfm3D.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Math/trfm3D.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Math/trfm3D.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser_gobj.dir/Math/plane.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Math/plane.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Math/plane.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser_gobj.dir/Math/line.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Math/line.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Math/line.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser_gobj.dir/Math/segment.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Math/segment.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Math/segment.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser_gobj.dir/Math/bbox.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Math/bbox.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Math/bbox.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser_gobj.dir/Math/bsphere.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Math/bsphere.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Math/bsphere.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser_gobj.dir/Math/intersect.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Math/intersect.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Math/intersect.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser_gobj.dir/Math/bboxGL.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Math/bboxGL.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Math/bboxGL.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser_gobj.dir/Math/trfmStack.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Math/trfmStack.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Math/trfmStack.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser_gobj.dir/Geometry/triangleMesh.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Geometry/triangleMesh.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Geometry/triangleMesh.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser_gobj.dir/Geometry/gObject.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Geometry/gObject.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Geometry/gObject.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser_gobj.dir/Geometry/gObjectManager.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Geometry/gObjectManager.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Geometry/gObjectManager.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser_gobj.dir/Geometry/triangleMeshGL.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Geometry/triangleMeshGL.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Geometry/triangleMeshGL.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser_gobj.dir/Shading/light.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Shading/light.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Shading/light.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser_gobj.dir/Shading/material.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Shading/material.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Shading/material.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser_gobj.dir/Shading/texture.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Shading/texture.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Shading/texture.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser_gobj.dir/Shading/texturert.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Shading/texturert.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Shading/texturert.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser_gobj.dir/Shading/image.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Shading/image.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Shading/image.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser_gobj.dir/Shading/textureManager.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Shading/textureManager.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Shading/textureManager.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser_gobj.dir/Shading/materialManager.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Shading/materialManager.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Shading/materialManager.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser_gobj.dir/Shading/lightManager.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Shading/lightManager.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Shading/lightManager.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser_gobj.dir/Shading/imageManager.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Shading/imageManager.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Shading/imageManager.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser_gobj.dir/Shaders/shaderUtils.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Shaders/shaderUtils.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Shaders/shaderUtils.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser_gobj.dir/Shaders/shaderManager.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Shaders/shaderManager.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Shaders/shaderManager.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser_gobj.dir/Shaders/shader.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Shaders/shader.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Shaders/shader.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser_gobj.dir/Shaders/uniform.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Shaders/uniform.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Shaders/uniform.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser_gobj.dir/Camera/camera.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Camera/camera.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Camera/camera.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser_gobj.dir/Camera/avatar.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Camera/avatar.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Camera/avatar.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser_gobj.dir/Camera/cameraManager.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Camera/cameraManager.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Camera/cameraManager.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser_gobj.dir/Camera/avatarManager.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Camera/avatarManager.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Camera/avatarManager.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser_gobj.dir/Scene/node.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Scene/node.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Scene/node.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser_gobj.dir/Scene/nodeManager.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Scene/nodeManager.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Scene/nodeManager.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser_gobj.dir/Scene/renderState.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Scene/renderState.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Scene/renderState.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser_gobj.dir/Scene/scene.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Scene/scene.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Scene/scene.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser_gobj.dir/Scene/skybox.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Scene/skybox.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Scene/skybox.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser_gobj.dir/Misc/constants.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Misc/constants.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Misc/constants.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser_gobj.dir/Misc/tools.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Misc/tools.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Misc/tools.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser_gobj.dir/Misc/jsoncpp.cpp.o -c /home/sergio/Documents/BEB/motore_grafikoa/Misc/jsoncpp.cpp",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Misc/jsoncpp.cpp"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser_gobj.dir/Misc/parse_scene.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Misc/parse_scene.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Misc/parse_scene.cc"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/cc  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser_gobj.dir/Misc/glm.c.o -c /home/sergio/Documents/BEB/motore_grafikoa/Misc/glm.c",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Misc/glm.c"
+},
+{
+  "directory": "/home/sergio/Documents/BEB/motore_grafikoa",
+  "command": "/usr/bin/c++  -I/home/sergio/Documents/BEB/motore_grafikoa/. -I/home/sergio/Documents/BEB/motore_grafikoa/Math -I/home/sergio/Documents/BEB/motore_grafikoa/Geometry -I/home/sergio/Documents/BEB/motore_grafikoa/Shading -I/home/sergio/Documents/BEB/motore_grafikoa/Shaders -I/home/sergio/Documents/BEB/motore_grafikoa/Camera -I/home/sergio/Documents/BEB/motore_grafikoa/Scene -I/home/sergio/Documents/BEB/motore_grafikoa/Misc -I/home/sergio/Documents/BEB/motore_grafikoa/Browser -g -o CMakeFiles/browser_gobj.dir/Browser/scenes.cc.o -c /home/sergio/Documents/BEB/motore_grafikoa/Browser/scenes.cc",
+  "file": "/home/sergio/Documents/BEB/motore_grafikoa/Browser/scenes.cc"
+}
+]
