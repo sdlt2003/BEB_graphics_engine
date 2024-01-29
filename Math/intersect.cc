@@ -3,7 +3,7 @@
 #include "constants.h"
 #include "tools.h"
 
-/* | algo           | difficulty | */
+/* | algorithm      | difficulty | */
 /* |----------------+------------| */
 /* | BSPherePlane   |          1 | */
 /* | BBoxBBox       |          2 | */
@@ -16,21 +16,27 @@
 //    IINTERSECT intersect
 
 int BSpherePlaneIntersect(const BSphere *bs, Plane *pl) {
-	/* =================== PUT YOUR CODE HERE ====================== */
-
-	/* =================== END YOUR CODE HERE ====================== */
+	if (pl->distance(bs->m_centre) > bs->m_radius) return +IREJECT;
+	if (pl->distance(bs->m_centre) < -bs->m_radius) return -IREJECT;
+	return IINTERSECT;
 }
-
+	
 
 // @@ TODO: test if two BBoxes intersect.
 //! Returns :
 //    IINTERSECT intersect
 //    IREJECT don't intersect
 
-int  BBoxBBoxIntersect(const BBox *bba, const BBox *bbb ) {
-	/* =================== PUT YOUR CODE HERE ====================== */
-
-	/* =================== END YOUR CODE HERE ====================== */
+int BBoxBBoxIntersect(const BBox *bboxA, const BBox *bboxB) {
+	if (bboxA->m_min[0] > bboxB->m_max[0] ||
+		bboxA->m_max[0] < bboxB->m_min[0] ||
+		bboxA->m_min[1] > bboxB->m_max[1] ||
+		bboxA->m_max[1] < bboxB->m_min[1] ||
+		bboxA->m_min[2] > bboxB->m_max[2] ||
+		bboxA->m_max[2] < bboxB->m_min[2]) {
+		return IREJECT;
+	}
+	return IINTERSECT;
 }
 
 // @@ TODO: test if a BBox and a plane intersect.
@@ -40,9 +46,17 @@ int  BBoxBBoxIntersect(const BBox *bba, const BBox *bbb ) {
 //    IINTERSECT intersect
 
 int  BBoxPlaneIntersect (const BBox *theBBox, Plane *thePlane) {
-	/* =================== PUT YOUR CODE HERE ====================== */
+	Vector3 min = theBBox->m_min;
+	Vector3 max = theBBox->m_max;
+	Vector3 normal = thePlane->m_n;
 
-	/* =================== END YOUR CODE HERE ====================== */
+	float d = thePlane->m_d;
+	float minDot = normal.dot(min);
+	float maxDot = normal.dot(max);
+	
+	if (minDot > d && maxDot > d) return +IREJECT;
+	if (minDot < d && maxDot < d) return -IREJECT;
+	return IINTERSECT;
 }
 
 // Test if two BSpheres intersect.
