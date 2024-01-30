@@ -45,17 +45,26 @@ int BBoxBBoxIntersect(const BBox *bboxA, const BBox *bboxB) {
 //   -IREJECT inside
 //    IINTERSECT intersect
 
-int  BBoxPlaneIntersect (const BBox *theBBox, Plane *thePlane) {
+int BBoxPlaneIntersect(const BBox *theBBox, Plane *thePlane) {
 	Vector3 min = theBBox->m_min;
 	Vector3 max = theBBox->m_max;
 	Vector3 normal = thePlane->m_n;
 
+	for (int i = 0; i < 3; i++) {
+		if (normal[i] > 0) {
+			float aux = min[i];
+			min[i] = max[i];
+			max[i] = aux;
+		}
+	}
+
 	float d = thePlane->m_d;
 	float minDot = normal.dot(min);
 	float maxDot = normal.dot(max);
-	
+
 	if (minDot > d && maxDot > d) return +IREJECT;
 	if (minDot < d && maxDot < d) return -IREJECT;
+	
 	return IINTERSECT;
 }
 
