@@ -19,6 +19,7 @@ static void InitRenderContext(int argc, char** argv,
 
 	// Init openGL and create a window
 	glutInit(&argc, argv);
+	// pantaila bat rgb pixelak daudakala / double buffera egin / zbuferra egin
 	glutInitDisplayMode ( GLUT_RGBA | GLUT_DOUBLE | GLUT_DEPTH );
 	glutInitWindowSize ( width, height );
 	glutInitWindowPosition ( wposx, wposy );
@@ -40,9 +41,11 @@ static void InitRenderContext(int argc, char** argv,
 	glClearColor( 0.4f, 0.4f, 0.4f, 1.0f );
 	glViewport(0, 0, width, height);              // Reset The Current Viewport And Perspective Transformation
 
-	// Enable culling
+	// Enable culling - atzean dauden poligonoak ez margotzeko / ikusteko
 	glEnable(GL_CULL_FACE);
 	glCullFace(GL_BACK);
+	// sentido contrario a las agujas del reloj, sentido antihorario
+	// eso significa que apuntan hacia nosotros, es decir, hacia delante.
 	glFrontFace(GL_CCW);
 
 	// Turn Depth Testing On
@@ -186,41 +189,60 @@ void create_scene_tmesh() {
 
 	mesh = new TriangleMesh;
 
-	float offset = 0;
+	float offset = 0.15;
 
+	//front
 	mesh->addPoint(Vector3(-0.25, -0.25, -0.25 )); // P0
 	mesh->addPoint(Vector3(0.25, -0.25, -0.25 )); // P1
 	mesh->addPoint(Vector3(0.25, 0.25, -0.25 )); // P2
 	mesh->addPoint(Vector3(-0.25, 0.25, -0.25 )); // P3
 
+	// back
+	mesh->addPoint(Vector3(-0.25 + offset, -0.25 + offset, -0.5)); // P4
+	mesh->addPoint(Vector3(0.25 - offset, -0.25 + offset, -0.5)); // P5
+	mesh->addPoint(Vector3(0.25 - offset, 0.25 - offset, -0.5)); // P6
+	mesh->addPoint(Vector3(-0.25 + offset, 0.25 - offset, -0.5)); // P7
+
 	// front
 	mesh->addTriangle(0, 1, 2); // P0 - P1 - P2
 	mesh->addTriangle(2, 3, 0); // P2 - P3 - P0
-
-	/* =================== PUT YOUR CODE HERE ====================== */
-	// Complete the triangle mesh with the vertices and triangles that
-	// form a 3D cube.
-
-	/* =================== END YOUR CODE HERE ====================== */
+	//back
+	mesh->addTriangle(4, 5, 6); // P4 - P5 - P6
+	mesh->addTriangle(6, 7, 4); // P6 - P7 - P4
+	//left
+	mesh->addTriangle(0, 4, 3); // P0 - P4 - P3
+	mesh->addTriangle(3, 4, 7); // P3 - P4 - P7
+	//right
+	mesh->addTriangle(1, 2, 5); // P1 - P5 - P2
+	mesh->addTriangle(6, 5, 2); // P6 - P5 - P2
+	//top
+	mesh->addTriangle(2, 3, 6); // P2 - P3 - P6
+	mesh->addTriangle(7, 6, 3); // P7 - P6 - P3
+	//bottom
+	mesh->addTriangle(0, 1, 4); // P0 - P1 - P4
+	mesh->addTriangle(5, 4, 1); // P5 - P4 - P1
 
 	GObject *gObj = GObjectManager::instance()->create("MG_CUBE");
 	gObj->add(mesh); // gObj object owns the mesh
 }
 
-void create_regular_polygon(int N) {
+void create_regular_polygon(int N, float scale) {
 
 	float P[3];
-	if (N < 2) {
+	if (N < 3) {
 		fprintf(stderr, "[E] Regular polygon needs at least 2 sides.\n");
 		exit(1);
 	}
+
 	TriangleMesh *mesh = new TriangleMesh;
-
-	/* =================== PUT YOUR CODE HERE ====================== */
-	// Create a regular polygon of N sides.
-
-
-	/* =================== END YOUR CODE HERE ====================== */
+	mesh->addPoint(Vector3(0, 0, 0)); // P0
+	for (int i = 0; i < N; i++) {
+		float angle = i * 2 * Constants::pi / N;
+		mesh->addPoint(Vector3(scale * cos(angle), scale * sin(angle), 0));
+	}
+	for (int i = 0; i < N; i++) {
+		mesh->addTriangle(0, i + 1, (i + 1) % N + 1);
+	}
 
 	GObject *gObj = GObjectManager::instance()->create("MG_POLYGON");
 	gObj->add(mesh);  // gObj object owns the mesh
@@ -238,7 +260,7 @@ int main(int argc, char** argv) {
 	T = new Trfm3D; // global variable
 	// create Scene
 	create_scene_tmesh();
-	create_regular_polygon(6);
+	create_regular_polygon(500, 0.1);
 	glutMainLoop();
 	delete T;
 	return 0;
