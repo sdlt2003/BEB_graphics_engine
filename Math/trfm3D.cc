@@ -7,6 +7,7 @@
 #include "trfm3D.h"
 
 
+
 Trfm3D::Trfm3D() : m_c1(Vector3::UNIT_X), m_c2(Vector3::UNIT_Y), m_c3(Vector3::UNIT_Z),
 				   m_tr(Vector3::ZERO), m_d(Vector3::ZERO), m_scl(1.0f), m_w(1.0f) {}
 
@@ -43,12 +44,9 @@ void Trfm3D::clone( const Trfm3D *T ) {	clone(*T); }
 // IMPORTANT NOTE:
 //   - suppose that m_d == (0,0,0)
 //   - suppose that m_w == 1
-
 Vector3 Trfm3D::transformPoint(const Vector3 & P) const {
 	Vector3 res;
-	/* =================== PUT YOUR CODE HERE ====================== */
-
-	/* =================== END YOUR CODE HERE ====================== */
+	res = m_c1 * (P[0] * m_scl) + m_c2 * (P[1] * m_scl) + m_c3 * (P[2] * m_scl) + m_tr;
 	return res;
 }
 
@@ -59,12 +57,9 @@ Vector3 Trfm3D::transformPoint(const Vector3 & P) const {
 //   - suppose that m_w == 1
 //
 //  also remember: vectors don't translate
-
 Vector3 Trfm3D::transformVector(const Vector3 & V) const {
 	Vector3 res;
-	/* =================== PUT YOUR CODE HERE ====================== */
-
-	/* =================== END YOUR CODE HERE ====================== */
+	res = m_c1 * (V[0] * m_scl) + m_c2 * (V[1] * m_scl) + m_c3 * (V[2] * m_scl);
 	return res;
 }
 
@@ -415,11 +410,28 @@ void Trfm3D::setScale(float scale ) {
 
 // @@ TODO: Rotate angle radians about an axis defined by vector and located at point
 //
-
 void Trfm3D::setRotAxis(const Vector3 & V, const Vector3 & P, float angle ) {
-	/* =================== PUT YOUR CODE HERE ====================== */
+	Vector3 axis = V.normalize();
+	Vector3 translation = P;
+	Vector3 scaledAxis = axis * sinf(angle);
+	float cosAngle = cosf(angle);
 
-	/* =================== END YOUR CODE HERE ====================== */
+	m_c1[0] = cosAngle + (1 - cosAngle) * axis[0] * axis[0];
+	m_c2[0] = (1 - cosAngle) * axis[0] * axis[1] - scaledAxis[2];
+	m_c3[0] = (1 - cosAngle) * axis[0] * axis[2] + scaledAxis[1];
+
+	m_c1[1] = (1 - cosAngle) * axis[0] * axis[1] + scaledAxis[2];
+	m_c2[1] = cosAngle + (1 - cosAngle) * axis[1] * axis[1];
+	m_c3[1] = (1 - cosAngle) * axis[1] * axis[2] - scaledAxis[0];
+
+	m_c1[2] = (1 - cosAngle) * axis[0] * axis[2] - scaledAxis[1];
+	m_c2[2] = (1 - cosAngle) * axis[1] * axis[2] + scaledAxis[0];
+	m_c3[2] = cosAngle + (1 - cosAngle) * axis[2] * axis[2];
+
+	m_tr = translation;
+	m_d = Vector3::ZERO;
+	m_scl = 1.0f;
+	m_w = 1.0f;
 }
 
 

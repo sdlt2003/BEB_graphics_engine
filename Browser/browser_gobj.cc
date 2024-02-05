@@ -189,7 +189,7 @@ void create_scene_tmesh() {
 
 	mesh = new TriangleMesh;
 
-	float offset = 0.15;
+	float offset = 0.0;
 
 	//front
 	mesh->addPoint(Vector3(-0.25, -0.25, -0.25 )); // P0
@@ -251,7 +251,7 @@ void create_regular_polygon(int N, float scale) {
 int main(int argc, char** argv) {
 
 	srand(time(0));
-	InitRenderContext(argc, argv, 900, 700, 100, 0);
+	InitRenderContext(argc, argv, 700, 700, 100, 0);
 	// set GLUT callback functions
 	glutDisplayFunc( Display );
 	glutKeyboardFunc( Keyboard );
@@ -260,7 +260,7 @@ int main(int argc, char** argv) {
 	T = new Trfm3D; // global variable
 	// create Scene
 	create_scene_tmesh();
-	create_regular_polygon(6, 0.3);
+	// create_regular_polygon(6, 0.3);
 	glutMainLoop();
 	delete T;
 	return 0;

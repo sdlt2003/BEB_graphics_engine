@@ -36,7 +36,7 @@
 /*     | c1.x*s  c2.x*s  c3.x*s tr.x | */
 /* M = | c1.y*s  c2.y*s  c3.y*s tr.y | */
 /*     | c1.z*s  c2.z*s  c3.z*s tr.z | */
-/*     |   d.x     d.y     d.z   w   | */
+/*     |   d.x     d.y     d.z   w   | * 0 0 0 1*/
 
 class Trfm3D {
 
