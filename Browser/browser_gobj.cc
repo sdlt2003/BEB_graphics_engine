@@ -260,7 +260,7 @@ int main(int argc, char** argv) {
 	T = new Trfm3D; // global variable
 	// create Scene
 	create_scene_tmesh();
-	create_regular_polygon(500, 0.1);
+	create_regular_polygon(6, 0.3);
 	glutMainLoop();
 	delete T;
 	return 0;
