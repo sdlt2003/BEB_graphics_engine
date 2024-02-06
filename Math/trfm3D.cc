@@ -54,7 +54,7 @@ Vector3 Trfm3D::transformPoint(const Vector3 & P) const {
 //
 // IMPORTANT NOTE:
 //   - suppose that m_d == (0,0,0)
-//   - suppose that m_w == 1
+//   - suppose that m_w == 1Trfm3D
 //
 //  also remember: vectors don't translate
 Vector3 Trfm3D::transformVector(const Vector3 & V) const {
@@ -411,27 +411,9 @@ void Trfm3D::setScale(float scale ) {
 // @@ TODO: Rotate angle radians about an axis defined by vector and located at point
 //
 void Trfm3D::setRotAxis(const Vector3 & V, const Vector3 & P, float angle ) {
-	Vector3 axis = V.normalize();
-	Vector3 translation = P;
-	Vector3 scaledAxis = axis * sinf(angle);
-	float cosAngle = cosf(angle);
-
-	m_c1[0] = cosAngle + (1 - cosAngle) * axis[0] * axis[0];
-	m_c2[0] = (1 - cosAngle) * axis[0] * axis[1] - scaledAxis[2];
-	m_c3[0] = (1 - cosAngle) * axis[0] * axis[2] + scaledAxis[1];
-
-	m_c1[1] = (1 - cosAngle) * axis[0] * axis[1] + scaledAxis[2];
-	m_c2[1] = cosAngle + (1 - cosAngle) * axis[1] * axis[1];
-	m_c3[1] = (1 - cosAngle) * axis[1] * axis[2] - scaledAxis[0];
-
-	m_c1[2] = (1 - cosAngle) * axis[0] * axis[2] - scaledAxis[1];
-	m_c2[2] = (1 - cosAngle) * axis[1] * axis[2] + scaledAxis[0];
-	m_c3[2] = cosAngle + (1 - cosAngle) * axis[2] * axis[2];
-
-	m_tr = translation;
-	m_d = Vector3::ZERO;
-	m_scl = 1.0f;
-	m_w = 1.0f;
+	setTrans(P * -1.0f);
+	addRotVec(V, angle);
+	addTrans(P);
 }
 
 
