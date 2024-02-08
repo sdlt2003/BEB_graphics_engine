@@ -198,10 +198,10 @@ void create_scene_tmesh() {
 	mesh->addPoint(Vector3(-0.25, 0.25, -0.25 )); // P3
 
 	// back
-	mesh->addPoint(Vector3(-0.25 + offset, -0.25 + offset, -0.5)); // P4
-	mesh->addPoint(Vector3(0.25 - offset, -0.25 + offset, -0.5)); // P5
-	mesh->addPoint(Vector3(0.25 - offset, 0.25 - offset, -0.5)); // P6
-	mesh->addPoint(Vector3(-0.25 + offset, 0.25 - offset, -0.5)); // P7
+	mesh->addPoint(Vector3(-0.25 + offset, -0.25 + offset, -0.75)); // P4
+	mesh->addPoint(Vector3(0.25 - offset, -0.25 + offset, -0.75)); // P5
+	mesh->addPoint(Vector3(0.25 - offset, 0.25 - offset, -0.75)); // P6
+	mesh->addPoint(Vector3(-0.25 + offset, 0.25 - offset, -0.75)); // P7
 
 	// front
 	mesh->addTriangle(0, 1, 2); // P0 - P1 - P2
