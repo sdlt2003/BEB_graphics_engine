@@ -269,16 +269,12 @@ Node * Node::cycleChild(size_t idx) {
 void Node::addChild(Node *theChild) {
 	if (theChild == 0) return;
 	if (m_gObject) {
-		/* =================== PUT YOUR CODE HERE ====================== */
-		// node has a gObject, so print warning
-
-		/* =================== END YOUR CODE HERE ====================== */
+		fprintf(stderr, "[W] Node::addChild: node %s already has an gObject\n", m_name.c_str());
+		return;
 	} else {
-		/* =================== PUT YOUR CODE HERE ====================== */
-		// node does not have gObject, so attach child
-
-		/* =================== END YOUR CODE HERE ====================== */
-
+		theChild->detach();
+		theChild->m_parent = this;
+		m_children.push_back(theChild);
 	}
 }
 
@@ -419,12 +415,25 @@ void Node::draw() {
 	   (this == Scene::instance()->get_display_node())) {
 		BBoxGL::draw( m_containerWC);
 	}
-	/* =================== PUT YOUR CODE HERE ====================== */
+	
+	// Draw geometry object
+	if (m_gObject != 0) {
+		rs->push(RenderState::modelview);
+		rs->addTrfm(RenderState::modelview, m_placement);
+		m_gObject->draw();
+		rs->pop(RenderState::modelview);
+	}
 
-	/* =================== END YOUR CODE HERE ====================== */
+	// Draw children
+	for(auto & theChild : m_children) {
+		rs->push(RenderState::modelview);
+		rs->addTrfm(RenderState::modelview, theChild->m_placement);
+		theChild->draw(); // Recursive call
+		rs->pop(RenderState::modelview); 
+	}
 
+	// Restore shader
 	if (prev_shader != 0) {
-		// restore shader
 		rs->setShader(prev_shader);
 	}
 }
