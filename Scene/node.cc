@@ -275,6 +275,7 @@ void Node::addChild(Node *theChild) {
 		theChild->detach();
 		theChild->m_parent = this;
 		m_children.push_back(theChild);
+        theChild->updateGS();
 	}
 }
 
@@ -332,10 +333,8 @@ void Node::propagateBBRoot() {
 //    See Recipe 1 at the beggining of the file in for knowing how to
 //    iterate through children.
 
-void Node::updateBB () {
-	/* =================== PUT YOUR CODE HERE ====================== */
-
-	/* =================== END YOUR CODE HERE ====================== */
+void Node::updateBB() {
+	
 }
 
 // @@ TODO: Update WC (world coordinates matrix) of a node and
@@ -356,9 +355,17 @@ void Node::updateBB () {
 //    iterate through children.
 
 void Node::updateWC() {
-	/* =================== PUT YOUR CODE HERE ====================== */
+	if (m_parent != 0) {
+        m_placementWC->clone(m_parent->m_placementWC);
+        m_placementWC->add(m_placement);
+    } else {
+        m_placementWC->clone(m_placement);
+    }
 
-	/* =================== END YOUR CODE HERE ====================== */
+    updateBB();
+    for(auto & theChild : m_children) {
+        theChild->updateWC(); // Recursive call
+    }
 }
 
 // @@ TODO:
@@ -370,9 +377,11 @@ void Node::updateWC() {
 // - Propagate Bounding Box to root (propagateBBRoot), starting from the parent, if parent exists.
 
 void Node::updateGS() {
-	/* =================== PUT YOUR CODE HERE ====================== */
+    this->updateWC();
 
-	/* =================== END YOUR CODE HERE ====================== */
+    if (this->m_parent != nullptr) {
+        this->m_parent->propagateBBRoot();
+    }
 }
 
 
@@ -419,17 +428,18 @@ void Node::draw() {
 	// Draw geometry object
 	if (m_gObject != 0) {
 		rs->push(RenderState::modelview);
-		rs->addTrfm(RenderState::modelview, m_placement);
-		m_gObject->draw();
-		rs->pop(RenderState::modelview);
+        rs->addTrfm(RenderState::modelview, m_placement);
+        m_gObject->draw();
+        rs->pop(RenderState::modelview);
 	}
 
 	// Draw children
 	for(auto & theChild : m_children) {
+        theChild->updateGS();
 		rs->push(RenderState::modelview);
 		rs->addTrfm(RenderState::modelview, theChild->m_placement);
-		theChild->draw(); // Recursive call
-		rs->pop(RenderState::modelview); 
+		theChild->draw();
+		rs->pop(RenderState::modelview);
 	}
 
 	// Restore shader
