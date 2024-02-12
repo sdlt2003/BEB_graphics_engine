@@ -301,9 +301,10 @@ void Node::detach() {
 //    - placementWC of node and parents are up-to-date
 
 void Node::propagateBBRoot() {
-	/* =================== PUT YOUR CODE HERE ====================== */
-
-	/* =================== END YOUR CODE HERE ====================== */
+    updateBB();
+    if (m_parent != nullptr) {
+        m_parent->propagateBBRoot();
+    }
 }
 
 // @@ TODO: auxiliary function
@@ -334,7 +335,14 @@ void Node::propagateBBRoot() {
 //    iterate through children.
 
 void Node::updateBB() {
-	
+    m_containerWC->init();
+    if (m_gObject != nullptr) {
+        m_containerWC->include(m_gObject->getContainer());
+    }
+
+    for(auto & theChild : m_children) {
+        m_containerWC->include(theChild->m_containerWC);
+    }
 }
 
 // @@ TODO: Update WC (world coordinates matrix) of a node and
@@ -363,6 +371,8 @@ void Node::updateWC() {
     }
 
     updateBB();
+    propagateBBRoot();
+
     for(auto & theChild : m_children) {
         theChild->updateWC(); // Recursive call
     }
