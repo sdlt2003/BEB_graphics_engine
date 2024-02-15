@@ -137,9 +137,14 @@ void OrthographicCamera::updateProjection() {
 //   - update projection matrix (m_projTrfm)
 
 void PerspectiveCamera::updateProjection() {
-	/* =================== PUT YOUR CODE HERE ====================== */
-
-	/* =================== END YOUR CODE HERE ====================== */
+	float tanHalfFovy = tanf(m_fovy / 2.0f);
+	m_top = m_near * tanHalfFovy;
+	m_bottom = -m_top;
+	m_right = m_top * m_aspectRatio;
+	m_left = -m_right;
+	
+	m_projTrfm->setFrustum(m_left, m_right, m_bottom, m_top, m_near, m_far);
+	
 	updateFrustumPlanes();
 }
 
@@ -164,12 +169,12 @@ void Camera::updateFrame () {
  *
  */
 
-void  Camera::lookAt(const Vector3 & E,
-					 const Vector3 & at,
-					 const Vector3 & up) {
-	/* =================== PUT YOUR CODE HERE ====================== */
-
-	/* =================== END YOUR CODE HERE ====================== */
+void  Camera::lookAt(const Vector3 & E, const Vector3 & at, const Vector3 & up) {
+	m_E = E;
+	m_D = (E - at).normalize();
+	m_R = up.normalize().cross(m_D);
+	m_U = m_D.cross(m_R);
+	
 	setViewTrfm();
 }
 

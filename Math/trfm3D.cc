@@ -46,7 +46,9 @@ void Trfm3D::clone( const Trfm3D *T ) {	clone(*T); }
 //   - suppose that m_w == 1
 Vector3 Trfm3D::transformPoint(const Vector3 & P) const {
 	Vector3 res;
-	res = m_c1 * (P[0] * m_scl) + m_c2 * (P[1] * m_scl) + m_c3 * (P[2] * m_scl) + m_tr;
+	res[0] = m_c1.x() * m_scl * P.x() + m_c2.x() * m_scl * P.y() + m_c3.x() * m_scl * P.z() + m_tr.x();
+    res[1] = m_c1.y() * m_scl * P.x() + m_c2.y() * m_scl * P.y() + m_c3.y() * m_scl * P.z() + m_tr.y();
+    res[2] = m_c1.z() * m_scl * P.x() + m_c2.z() * m_scl * P.y() + m_c3.z() * m_scl * P.z() + m_tr.z();
 	return res;
 }
 
@@ -59,7 +61,9 @@ Vector3 Trfm3D::transformPoint(const Vector3 & P) const {
 //  also remember: vectors don't translate
 Vector3 Trfm3D::transformVector(const Vector3 & V) const {
 	Vector3 res;
-	res = m_c1 * (V[0] * m_scl) + m_c2 * (V[1] * m_scl) + m_c3 * (V[2] * m_scl);
+	res[0] = m_c1.x() * m_scl * V.x() + m_c2.x() * m_scl * V.y() + m_c3.x() * m_scl * V.z();
+	res[1] = m_c1.y() * m_scl * V.x() + m_c2.y() * m_scl * V.y() + m_c3.y() * m_scl * V.z();
+	res[2] = m_c1.z() * m_scl * V.x() + m_c2.z() * m_scl * V.y() + m_c3.z() * m_scl * V.z();
 	return res;
 }
 
