@@ -140,7 +140,7 @@ void PerspectiveCamera::updateProjection() {
 	float tanHalfFovy = tanf(m_fovy / 2.0f);
 	m_top = m_near * tanHalfFovy;
 	m_bottom = -m_top;
-	m_right = m_top * m_aspectRatio;
+	m_right = m_aspectRatio * m_top;
 	m_left = -m_right;
 	
 	m_projTrfm->setFrustum(m_left, m_right, m_bottom, m_top, m_near, m_far);
@@ -172,8 +172,8 @@ void Camera::updateFrame () {
 void  Camera::lookAt(const Vector3 & E, const Vector3 & at, const Vector3 & up) {
 	m_E = E;
 	m_D = (E - at).normalize();
-	m_R = up.normalize().cross(m_D);
-	m_U = m_D.cross(m_R);
+	m_R = crossVectors(up.normalize(), m_D);
+	m_U = crossVectors(m_D, m_R);
 	
 	setViewTrfm();
 }
@@ -301,7 +301,7 @@ int Camera::checkFrustum(const BBox *theBBox,
 						 unsigned int *planesBitM) {
 	int res = -1; // by default, BBOX fully inside
 	/* =================== PUT YOUR CODE HERE ====================== */
-
+	
 	/* =================== END YOUR CODE HERE ====================== */
 	return res; // BBox is fully inside the frustum
 }

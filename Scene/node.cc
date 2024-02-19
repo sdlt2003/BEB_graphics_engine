@@ -272,7 +272,7 @@ void Node::addChild(Node *theChild) {
 		fprintf(stderr, "[W] Node::addChild: node %s already has an gObject\n", m_name.c_str());
 		return;
 	} else {
-		theChild->detach();
+		//theChild->detach();
 		theChild->m_parent = this;
 		m_children.push_back(theChild);
         theChild->updateGS();
@@ -302,9 +302,9 @@ void Node::detach() {
 
 void Node::propagateBBRoot() {
     updateBB();
-    if (m_parent != nullptr) {
-        m_parent->propagateBBRoot();
-    }
+	if (m_parent) {
+		m_parent->propagateBBRoot();
+	}	
 }
 
 // @@ TODO: auxiliary function
@@ -335,14 +335,16 @@ void Node::propagateBBRoot() {
 //    iterate through children.
 
 void Node::updateBB() {
-    m_containerWC->init();
-    if (m_gObject != nullptr) {
-        m_containerWC->include(m_gObject->getContainer());
-    }
+	m_containerWC->init();
 
-    for(auto & theChild : m_children) {
-        m_containerWC->include(theChild->m_containerWC);
-    }
+	if (m_gObject) {
+		m_containerWC->clone(m_gObject->getContainer());
+		m_containerWC->transform(m_placementWC);
+	} else{
+		for(auto & theChild : m_children) {
+				m_containerWC->include(theChild->m_containerWC);	
+			}
+	}
 }
 
 // @@ TODO: Update WC (world coordinates matrix) of a node and
@@ -363,19 +365,19 @@ void Node::updateBB() {
 //    iterate through children.
 
 void Node::updateWC() {
-	if (m_parent != 0) {
-        m_placementWC->clone(m_parent->m_placementWC);
-        m_placementWC->add(m_placement);
-    } else {
-        m_placementWC->clone(m_placement);
-    }
+	if (m_parent) {
+		m_placementWC->clone(m_parent->m_placementWC);
+		m_placementWC->add(m_placement);
+	} else {
+		m_placementWC->clone(m_placement);
+	}
+	// propagateBBRoot();
 
-    updateBB();
-    propagateBBRoot();
+	for(auto & theChild : m_children) {
+		theChild->updateWC(); // Recursive call
+	}
 
-    for(auto & theChild : m_children) {
-        theChild->updateWC(); // Recursive call
-    }
+	updateBB();
 }
 
 // @@ TODO:
@@ -388,8 +390,7 @@ void Node::updateWC() {
 
 void Node::updateGS() {
     this->updateWC();
-
-    if (this->m_parent != nullptr) {
+    if (this->m_parent) {
         this->m_parent->propagateBBRoot();
     }
 }
@@ -432,25 +433,23 @@ void Node::draw() {
 	// Print BBoxes
 	if((rs->getBBoxDraw() || m_drawBBox) &&
 	   (this == Scene::instance()->get_display_node())) {
-		BBoxGL::draw( m_containerWC);
+		BBoxGL::draw(m_containerWC);
 	}
 	
 	// Draw geometry object
+	rs->push(RenderState::modelview);
+    rs->addTrfm(RenderState::modelview, m_placementWC);
 	if (m_gObject != 0) {
-		rs->push(RenderState::modelview);
-        rs->addTrfm(RenderState::modelview, m_placement);
         m_gObject->draw();
-        rs->pop(RenderState::modelview);
 	}
 
 	// Draw children
 	for(auto & theChild : m_children) {
-        theChild->updateGS();
-		rs->push(RenderState::modelview);
-		rs->addTrfm(RenderState::modelview, theChild->m_placement);
 		theChild->draw();
-		rs->pop(RenderState::modelview);
 	}
+
+	// Pop matrix
+	rs->pop(RenderState::modelview);
 
 	// Restore shader
 	if (prev_shader != 0) {
@@ -472,7 +471,6 @@ void Node::setCulled(bool culled) {
 
 void Node::frustumCull(Camera *cam) {
 	/* =================== PUT YOUR CODE HERE ====================== */
-
 	/* =================== END YOUR CODE HERE ====================== */
 }
 
@@ -490,8 +488,7 @@ void Node::frustumCull(Camera *cam) {
 const Node *Node::checkCollision(const BSphere *bsph) const {
 	if (!m_checkCollision) return 0;
 	/* =================== PUT YOUR CODE HERE ====================== */
-
-	return 0; /* No collision */
+	return 0;
    /* =================== END YOUR CODE HERE ====================== */
 }
 
