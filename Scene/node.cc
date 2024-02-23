@@ -344,7 +344,7 @@ void Node::updateBB() {
 				m_containerWC->include(theChild->m_containerWC);	
 			}
 	}
-}
+} 
 
 // @@ TODO: Update WC (world coordinates matrix) of a node and
 // its bounding box recursively updating all children.
