@@ -272,7 +272,6 @@ void Node::addChild(Node *theChild) {
 		fprintf(stderr, "[W] Node::addChild: node %s already has an gObject\n", m_name.c_str());
 		return;
 	} else {
-		//theChild->detach();
 		theChild->m_parent = this;
 		m_children.push_back(theChild);
         theChild->updateGS();
@@ -371,7 +370,6 @@ void Node::updateWC() {
 	} else {
 		m_placementWC->clone(m_placement);
 	}
-	// propagateBBRoot();
 
 	for(auto & theChild : m_children) {
 		theChild->updateWC(); // Recursive call
@@ -436,20 +434,17 @@ void Node::draw() {
 		BBoxGL::draw(m_containerWC);
 	}
 	
-	// Draw geometry object
-	rs->push(RenderState::modelview);
-    rs->addTrfm(RenderState::modelview, m_placementWC);
+	// Draw geometry object 
 	if (m_gObject != 0) {
-        m_gObject->draw();
+		rs->push(RenderState::modelview);
+		rs->addTrfm(RenderState::modelview, m_placementWC);
+		m_gObject->draw();
+		rs->pop(RenderState::modelview);
+	} else { // Draw children
+		for(auto & theChild : m_children) {
+			theChild->draw();
+		}
 	}
-
-	// Draw children
-	for(auto & theChild : m_children) {
-		theChild->draw();
-	}
-
-	// Pop matrix
-	rs->pop(RenderState::modelview);
 
 	// Restore shader
 	if (prev_shader != 0) {
@@ -488,9 +483,21 @@ void Node::frustumCull(Camera *cam) {
 const Node *Node::checkCollision(const BSphere *bsph) const {
 	if (!m_checkCollision) return 0;
 	/* =================== PUT YOUR CODE HERE ====================== */
-	return 0;
+
+	// Check if the current node's bounding sphere intersects with the given BSphere
+	if (BSphereBBoxIntersect(bsph, this->m_containerWC) == IINTERSECT) {
+		if (m_gObject) return this;
+		else {
+			for (const auto& theChild : m_children) {
+				const Node* collisionNode = theChild->checkCollision(bsph);
+				if (collisionNode != 0) return collisionNode;
+			}
+		}
+	}
+	return 0; // No collision found
    /* =================== END YOUR CODE HERE ====================== */
 }
+
 
 void Node::print_trfm(int sep) const {
 	std::string delim(sep,' ');

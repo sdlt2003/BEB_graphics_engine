@@ -299,11 +299,9 @@ void  Camera::arcLeftRight(float angle) {
 
 int Camera::checkFrustum(const BBox *theBBox,
 						 unsigned int *planesBitM) {
-	int res = -1; // by default, BBOX fully inside
 	/* =================== PUT YOUR CODE HERE ====================== */
-	
 	/* =================== END YOUR CODE HERE ====================== */
-	return res; // BBox is fully inside the frustum
+	return 0;
 }
 
 /////////////////////////////////////////////////////////////////////////////////////

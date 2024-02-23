@@ -447,10 +447,10 @@ static void SpecialKey (int key, int x, int y) {
 			if (shift_key) theAvatar->panY(-1);
 			else theAvatar->upDown(-0.05f);
 			break;
-		case GLUT_KEY_PAGE_UP:
+		case GLUT_KEY_INSERT:
 			theAvatar->advance(1);
 			break;
-		case GLUT_KEY_PAGE_DOWN:
+		case GLUT_KEY_F12:
 			theAvatar->advance(-1);
 			break;
 		case GLUT_KEY_HOME:
