@@ -503,13 +503,15 @@ void animate(int value) {
 	int timeSincePrevFrame = currTime - prevTime;
 	int elapsedTime = currTime - startTime;
 
-	// ##### REPLACE WITH YOUR OWN GAME/APP MAIN CODE HERE #####
 	if (runAnimation) {
-		// Force a redisplay to render the new image
-
+		static float angle = 0.0f;
+		angle += angle_step; 
+		if (angle > 2 * Constants::pi) {
+			angle = 0.0f; 
+		}
+		RenderState::instance()->setSC(cos(angle)); 
 		glutPostRedisplay();
 	}
-	// ##### END OF GAME/APP MAIN CODE #####
 	prevTime = currTime;
 }
 

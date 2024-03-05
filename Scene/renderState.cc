@@ -14,7 +14,8 @@ RenderState::RenderState() :
 	m_camera(0),
 	m_ambient(Vector3(0.05f, 0.05f, 0.05)),
 	m_activeShader(0),
-	m_drawBBox(false) {}
+	m_drawBBox(false),
+	m_sc(1.0f) {}
 
 RenderState::~RenderState() {}
 
@@ -143,6 +144,14 @@ void RenderState::addTrfm(stack_t matrixMode, const Trfm3D & T) {
 
 const GLfloat *RenderState::getGLMatrix(stack_t matrixMode) {
 	return chooseStack(matrixMode)->getGLMatrix();
+}
+
+float RenderState::getSC() const {
+	return m_sc;
+}
+
+void RenderState::setSC(float v) {
+	m_sc = v;
 }
 
 ///////////////////////////////////////////

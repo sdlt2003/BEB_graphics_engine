@@ -262,6 +262,10 @@ void ShaderProgram::beforeDraw() {
 			}
 		}
 	}
+
+	if (this->has_capability("sc")) {
+		this->send_uniform("sc", rs->getSC());
+	}
 }
 
 void ShaderProgram::print() const {
