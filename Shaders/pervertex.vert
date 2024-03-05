@@ -34,4 +34,5 @@ varying vec2 f_texCoord;
 
 void main() {
 	gl_Position = modelToClipMatrix * vec4(v_position, 1);
+	f_color = clamp(modelToCameraMatrix*vec4(v_position, 1.0), 0.0, 1.0);
 }
