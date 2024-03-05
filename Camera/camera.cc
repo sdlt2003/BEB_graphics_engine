@@ -299,9 +299,24 @@ void  Camera::arcLeftRight(float angle) {
 
 int Camera::checkFrustum(const BBox *theBBox,
 						 unsigned int *planesBitM) {
-	/* =================== PUT YOUR CODE HERE ====================== */
-	/* =================== END YOUR CODE HERE ====================== */
-	return 0;
+	
+	int collision = 0;
+	for (int i = 0; i < 6; i++) {
+		int intersect = BBoxPlaneIntersect(theBBox, m_fPlanes[i]);
+		if (intersect == +IREJECT) {
+			collision = 1;
+			
+		} else if (intersect == IINTERSECT) {
+			collision =+ 1;
+		}
+	}
+	
+	if (collision == 0) {
+		return -1;
+	} 
+	else{
+		return 0;
+	}
 }
 
 /////////////////////////////////////////////////////////////////////////////////////
