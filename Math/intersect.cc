@@ -16,11 +16,13 @@
 //    IINTERSECT intersect
 
 int BSpherePlaneIntersect(const BSphere *bs, Plane *pl) {
-	if (pl->distance(bs->m_centre) > bs->m_radius) return +IREJECT;
-	if (pl->distance(bs->m_centre) < -bs->m_radius) return -IREJECT;
-	return IINTERSECT;
+	float dist = pl->signedDistance(bs->m_centre);  
+	if (fabs(dist) < bs->m_radius)  
+    	return IINTERSECT; // Intersect  
+	if (dist < 0)  
+    	return -IREJECT; // BSphere inside plane  
+	return +IREJECT; // BSphere outside plane  
 }
-	
 
 // @@ TODO: test if two BBoxes intersect.
 //! Returns :

@@ -415,9 +415,9 @@ void Trfm3D::setScale(float scale ) {
 // @@ TODO: Rotate angle radians about an axis defined by vector and located at point
 //
 void Trfm3D::setRotAxis(const Vector3 & V, const Vector3 & P, float angle ) {
-	setTrans(P * -1.0f);
+	setTrans(P); 
 	addRotVec(V, angle);
-	addTrans(P);
+	addTrans(P * -1.0f);
 }
 
 
