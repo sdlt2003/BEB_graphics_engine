@@ -77,9 +77,7 @@ const float *Light::getPositionEye_4fv() const {
 
 /**
  * @@ TODO: Place the light into the scene. Store the result into positionEye and spotDirectionEye.
- *
- * hints:
- *        - multiply position (and/or direction) with modelView matrix
+ * 	 hints: multiply position (and/or direction) with modelView matrix
  */
 
 void Light::placeScene(const Trfm3D & view, const Trfm3D & model) {
