@@ -198,7 +198,7 @@ template<class V> void ShaderProgram::send_uniform(const std::string & uname, co
 void ShaderProgram::beforeDraw() {
 
 	Material *mat;
-	Texture *tex;
+	Texture *tex, *tex2;
 	RenderState *rs = RenderState::instance();
 	static char buffer[1024];
 
@@ -247,12 +247,24 @@ void ShaderProgram::beforeDraw() {
 		this->send_uniform("theMaterial.specular", mat->getSpecular());
 		this->send_uniform("theMaterial.shininess", mat->getShininess());
 		this->send_uniform("theMaterial.alpha", mat->getAlpha());
-		tex = mat->getTexture();
+		
+		tex = mat->getTexture(); // earth_atmos
 		if (tex != 0) {
-			// Set texture to unit 'Constants::gl_texunits::texture'
 			tex->bindGLUnit(Constants::gl_texunits::texture);
 			this->send_uniform("texture0", Constants::gl_texunits::texture);
+			
+			if (this->has_capability("multitex")){
+				tex2 = mat->getTexture(1); // earth_clouds
+				if (tex2 != 0) {
+					tex2->bindGLUnit(Constants::gl_texunits::rest);
+					this->send_uniform("texture1", Constants::gl_texunits::rest); 
+					this->send_uniform("uCloudOffset", rs->getCloudsOffset());
+				}
+			}
 		}
+
+		
+
 		if (this->has_capability("bump")) {
 			tex = mat->getBumpMap();
 			if (tex != 0) {

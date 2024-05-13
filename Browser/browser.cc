@@ -502,14 +502,19 @@ void animate(int value) {
 	int currTime = glutGet(GLUT_ELAPSED_TIME);
 	int timeSincePrevFrame = currTime - prevTime;
 	int elapsedTime = currTime - startTime;
-
+	static float t = 0.0;
 	if (runAnimation) {
+		/* code that we tested to see the animations working
 		static float angle = 0.0f;
 		angle += angle_step; 
 		if (angle > 2 * Constants::pi) {
 			angle = 0.0f; 
-		}
-		RenderState::instance()->setSC(cos(angle)); 
+		}		
+		*/
+		t = t + 0.001;
+		RenderState::instance()->setCloudsOffset(t);
+		RenderState::instance()->setSC(t); 
+
 		glutPostRedisplay();
 	}
 	prevTime = currTime;

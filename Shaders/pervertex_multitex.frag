@@ -9,11 +9,10 @@ uniform sampler2D texture1;
 uniform float uCloudOffset; // The offset of the cloud texture
 
 void main() {
-
-	// The final color must be a linear combination of both
-	// textures with a factor of 0.5, e.g:
-	//
-	// color = 0.5 * color_of_texture0 + 0.5 * color_of_texture1
-
-	gl_FragColor = vec4(1.0);
+    vec4 t1 = texture2D(texture0, f_texCoord); 
+    vec4 t2 = texture2D(texture1, f_texCoord + vec2(uCloudOffset, 0.0));
+    
+    vec4 ttotal = 0.5 * t1 + 0.5 * t2;
+    
+    gl_FragColor = ttotal;  // Establece el color final del fragmento
 }
