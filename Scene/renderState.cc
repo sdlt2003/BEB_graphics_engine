@@ -14,7 +14,9 @@ RenderState::RenderState() :
 	m_camera(0),
 	m_ambient(Vector3(0.05f, 0.05f, 0.05)),
 	m_activeShader(0),
-	m_drawBBox(false) {}
+	m_drawBBox(false),
+	m_sc(1.0f),
+	m_cloudsOffset(0.0f) {}
 
 float RenderState::getCloudsOffset() const {
 	return m_cloudsOffset;
