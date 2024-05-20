@@ -9,8 +9,8 @@ uniform sampler2D texture1;
 uniform float uCloudOffset; // The offset of the cloud texture
 
 void main() {
-    vec4 t1 = texture2D(texture0, f_texCoord); 
-    vec4 t2 = texture2D(texture1, f_texCoord + vec2(uCloudOffset, 0.0));
+    vec4 t1 = texture2D(texture0, f_texCoord) * f_color; 
+    vec4 t2 = texture2D(texture1, f_texCoord + vec2(uCloudOffset, 0.0)) * f_color;
     
     vec4 ttotal = 0.5 * t1 + 0.5 * t2;
     
