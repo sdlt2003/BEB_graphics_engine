@@ -39,73 +39,72 @@
 
 	// Calculates the total lighting contribution from a directional light
 	vec3 calculateDirectionalLight(vec3 lightDir, vec3 normal, vec3 viewDir, vec3 lightColor, float shininess) {
-		vec3 diffColor = vec3(0.0); // Color difuso
-		vec3 specColor = vec3(0.0); // Color especular
+		vec3 i_diff = vec3(0.0); 
+		vec3 i_spec = vec3(0.0); 
 
-		// i_diff
-		float diff = lambert(normal, lightDir);
-		if(diff > 0.0) {
-			diffColor = diff * lightColor *theMaterial.diffuse;
+		float lam = lambert(normal, lightDir);
+		if(lam > 0.0) {
+			i_diff = lightColor * theMaterial.diffuse;
 
-			// i_spec
 			vec3 reflectDir = reflect(lightDir, normal);
 			float spec = pow(lambert(viewDir, reflectDir), shininess);
-			specColor = spec * lightColor * theMaterial.specular;
+			i_spec = spec * lightColor * theMaterial.specular;
 		}
-		return diffColor + specColor;
+		return (lam * (i_diff + i_spec));
 	}
 
 	// Calculates the total lighting contribution from a local light
-	vec3 calculatePositionalLight(vec3 lightPos, vec3 vertPos, vec3 normal, vec3 viewDir, vec3 lightColor, vec3 materialDiffuse, vec3 materialSpecular, float shininess, vec3 att) {
-		vec3 diffColor = vec3(0.0);
-		vec3 specColor = vec3(0.0);
+	vec3 calculateLocalLight(vec3 lightPos, vec3 vertPos, vec3 normal, vec3 viewDir, vec3 lightColor, vec3 materialDiffuse, vec3 materialSpecular, float shininess, vec3 att) {
+		vec3 i_diff = vec3(0.0);
+		vec3 i_spec = vec3(0.0);
 
 		vec3 l = normalize(lightPos - vertPos);
 		float d = length(lightPos - vertPos);
 
 		float attenuation = 1.0 / (att.x + att.y * d + att.z * d * d);
 
-		float diff = lambert(normal, l);
-		if (diff > 0.0) {
-			diffColor = diff * lightColor * theMaterial.diffuse * attenuation;
+		float NoL = lambert(normal, l);
+		if (NoL > 0.0) {
+			i_diff = lightColor * theMaterial.diffuse * attenuation;
 
 			vec3 reflectDir = reflect(-l, normal);
 			float spec = pow(lambert(viewDir, reflectDir), shininess);
-			specColor = spec * lightColor * theMaterial.specular * attenuation;
+			i_spec = spec * lightColor * theMaterial.specular * attenuation;
 		}
-		return diffColor + specColor;
+		return (NoL * (i_diff + i_spec));
 	}
 
 	// Calculates the total lighting contribution from a spotlight light
-	vec3 calculateSpotlight(int i, vec3 l, vec3 spotDir, float cutoff, float exponent, vec3 vertPos, vec3 normal, vec3 viewDir, vec3 materialSpecular, float shininess, vec3 att) {
-		vec3 diffColor = vec3(0.0);
-		vec3 specColor = vec3(0.0);
+	vec3 calculateSpotLight(int i, vec3 l, vec3 spotDir, float cutoff, float exponent, vec3 vertPos, vec3 normal, vec3 viewDir, vec3 materialSpecular, float shininess, vec3 att) {
+		vec3 i_diff = vec3(0.0);
+		vec3 i_spec = vec3(0.0);
 
 		vec3 dir = normalize(theLights[i].spotDir);
 		float cos = dot(dir, -l);
 		float c_spot = 0.0;
+		float NoL = 0.0;
 
 		if (cos > theLights[i].cosCutOff) {
 			if (cos > 0.0) {
-				float NoL = lambert(normal, l);
+				NoL = lambert(normal, l);
 				if (NoL > 0.0) {
 					c_spot = pow(cos, theLights[i].exponent);
-					float spec = pow(lambert(viewDir, reflect(-l, normal)), shininess);
+					i_diff = theMaterial.diffuse * theLights[i].diffuse;
 
-					diffColor = NoL * theMaterial.diffuse * theLights[i].diffuse * c_spot;
-					specColor = NoL * theMaterial.specular * theLights[i].specular * c_spot;
+					vec3 reflectDir = reflect(-l, normal);
+					float spec = pow(lambert(viewDir, reflectDir), shininess);
+
+					i_spec = spec * theMaterial.specular * theLights[i].specular;
 				}
 			}
 		}
-
-		return diffColor + specColor;
+		return (c_spot * NoL * (i_diff + i_spec));
 	}
 
 
 
 	void main() {	
-		vec3 i_spec = vec3(0.0);
-		vec3 i_diff = vec3(0.0);
+		vec3 i_total = vec3(0.0);
 		vec3 l;
 
 		vec3 position_eye = (modelToCameraMatrix * vec4(v_position, 1.0)).xyz;
@@ -126,14 +125,14 @@
 				vec3 light_direction = normalize(light_vector);
 
 				if (theLights[i].cosCutOff == 0.0) { // positional light
-					light_contrib = calculatePositionalLight(
+					light_contrib = calculateLocalLight(
 						theLights[i].position.xyz, position_eye, normal_eye, view_direction,
 						theLights[i].diffuse, theMaterial.diffuse, theMaterial.specular,
 						theMaterial.shininess, theLights[i].attenuation
 					);
 				} else { // Spotlight
 					l = normalize(theLights[i].position.xyz - position_eye);
-					light_contrib = calculateSpotlight(
+					light_contrib = calculateSpotLight(
 						i, l, theLights[i].spotDir, theLights[i].cosCutOff,
 						theLights[i].exponent, position_eye, normal_eye, view_direction,
 						theMaterial.specular, theMaterial.shininess, theLights[i].attenuation
@@ -141,10 +140,10 @@
 				}
 			}
 
-			i_diff += light_contrib;
+			i_total += light_contrib;
 		}
 
-		f_color = vec4(i_diff + scene_ambient, 1.0);
+		f_color = vec4(i_total + scene_ambient, 1.0);
 		f_texCoord = v_texCoord;
 		gl_Position = modelToClipMatrix * vec4(v_position, 1.0);
 	}
