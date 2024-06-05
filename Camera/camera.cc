@@ -300,23 +300,25 @@ void  Camera::arcLeftRight(float angle) {
 int Camera::checkFrustum(const BBox *theBBox,
 						 unsigned int *planesBitM) {
 	
-	int collision = 0;
+	int result = -1; // Assuming that the BBox is fully inside the frustum
+	unsigned int mask = *planesBitM; // Bitmask to store the planes that the BBox is inside
+
 	for (int i = 0; i < 6; i++) {
+		if (mask & (1 << i)) continue;
+
 		int intersect = BBoxPlaneIntersect(theBBox, m_fPlanes[i]);
-		if (intersect == +IREJECT) {
-			collision = 1;
-			
-		} else if (intersect == IINTERSECT) {
-			collision =+ 1;
+		if (intersect == IREJECT) {
+            // If the BBox is fully outside the i-th plane
+            *planesBitM = mask | (1 << i); // Mark this plane as determining rejection
+            return 1; // Completely outside the frustum
+        } else if (intersect == IINTERSECT) {
+			// If the BBox intersects the i-th plane
+			result = 0; // The BBox intersects the frustum
+			mask |= (1 << i); // Mark this plane as determining intersection
 		}
 	}
-	
-	if (collision == 0) {
-		return -1;
-	} 
-	else{
-		return 0;
-	}
+	*planesBitM = mask;
+	return result;
 }
 
 /////////////////////////////////////////////////////////////////////////////////////
